@@ -60,9 +60,21 @@ npm i -s @apollo/client graphql (apollo-boost @apollo/react-hooks )
 npm i -s -D @graphql-codegen/cli, ...
 ```
 
+### next (with typescript) : admin
+```
+npx create-next-app --ts
+
+npm run dev
+npm run build
+npm run start
+```
+
 ### next graphql (with typescript) : admin
 ```
 npx create-next-app --ts
+
+npm i -s @apollo/client graphql (apollo-boost @apollo/react-hooks )
+npm i -s -D @graphql-codegen/cli, ...
 
 npm run dev
 npm run build
