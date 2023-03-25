@@ -6,6 +6,7 @@
 ### admin console with login
 
 ## techs
+
 ### react basic : agency
 ```
 npx create-react-app basic
@@ -79,4 +80,30 @@ npm i -s -D @graphql-codegen/cli, ...
 npm run dev
 npm run build
 npm run start
+```
+
+### react, capicitor, graphql (with typescript) : mobile
+```
+npx create-react-app type-cap --template typescript
+
+npm i @capacitor/core –save
+npm i -D @capacitor/cli –save
+
+npx cap init
+
+npm i @capacitor/android @capacitor/ios –save
+
+npm i -s @apollo/client graphql (apollo-boost @apollo/react-hooks )
+npm i -s -D @graphql-codegen/cli, ...
+
+npx cap add android
+
+npm run build
+npx cap copy
+npx cap sync android
+```
+
+### common
+```
+npm i -s swiper animate.css axios
 ```
