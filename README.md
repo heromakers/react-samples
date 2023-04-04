@@ -12,7 +12,7 @@
 npx create-react-app basic
 ```
 
-### react typescript : agency
+### react typescript : admin
 ```
 npx create-react-app types --template typescript
 ```
