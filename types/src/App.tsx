@@ -1,25 +1,36 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+// import ScrollToTop from './component/scrollToTop/ScrollToTop';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function App() {
+import './assets/scss/app.scss';
+
+import Splash from './pages/Splash';
+import Starter from './pages/Starter';
+
+import ErrorPage from './pages/Splash';
+
+import AboutUs from './pages/Splash';
+import Contact from './pages/Splash';
+import PrivacyPolicy from './pages/Splash';
+import TermsOfUse from './pages/Splash';
+import Team from './pages/Splash';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Routes>
+        <Route path={process.env.PUBLIC_URL + "/"} element={<Splash />}/>
+        <Route path={process.env.PUBLIC_URL + "/start"} element={<Starter />}/>
+        <Route path={process.env.PUBLIC_URL + "/404"} element={<ErrorPage />}/>
+
+        <Route path={process.env.PUBLIC_URL + "/about-us"} element={<AboutUs />}/>
+        <Route path={process.env.PUBLIC_URL + "/team"} element={<Team />}/>
+        <Route path={process.env.PUBLIC_URL + "/contact"} element={<Contact />}/>
+        <Route path={process.env.PUBLIC_URL + "/privacy-policy"} element={<PrivacyPolicy />}/>
+        <Route path={process.env.PUBLIC_URL + "/terms-use"} element={<TermsOfUse />}/>
+      </Routes>
+    </Router>
   );
 }
 
