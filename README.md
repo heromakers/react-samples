@@ -7,6 +7,11 @@
 
 ## techs
 
+### vite
+```
+npm create vite@latest 
+```
+
 ### react basic : agency
 ```
 npx create-react-app basic
