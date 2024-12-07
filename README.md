@@ -12,6 +12,19 @@
 npm create vite@latest 
 ```
 
+### framework7
+```
+$ npm install -g cordova framework7-cli
+```
+```
+mkdir frwk7
+cd frwk7
+framework7 create
+```
+- react
+- core with vite
+- core without vite
+
 ### react basic : agency
 ```
 npx create-react-app basic
