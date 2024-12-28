@@ -6,6 +6,8 @@
 ### admin console with login
 
 ## techs
+### vercel nextjs
+https://vercel.com/
 
 ### vite
 ```
