@@ -1,0 +1,34 @@
+{
+  "name": "react-next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "static": "next build && next export",
+    "prettier:ts": "prettier --write 'src/**/*.{ts,tsx}'"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^2.6.1",
+    "axios": "^1.8.2",
+    "i18next": "^24.2.2",
+    "next": "15.2.2",
+    "next-i18next": "^15.4.2",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0",
+    "react-i18next": "^15.4.1",
+    "react-redux": "^9.2.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5"
+  }
+}
