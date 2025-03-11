@@ -1,0 +1,8 @@
+{
+  "name": "IonicCapacitor",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite",
+  "id": "b8cb4ec8"
+}
