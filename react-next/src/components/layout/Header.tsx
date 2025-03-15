@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
 import Link from "next/link";
 import MainMenu from "./MainMenu";
 import MobileMenu from "./MobileMenu";
 
 const Header = () => {
+  const [isMobileMenuOpened, setMobileMenuOpened] = useState(false);
   const [navbar, setNavbar] = useState(false);
 
   const changeBackground = () => {
@@ -15,6 +15,10 @@ const Header = () => {
     } else {
       setNavbar(false);
     }
+  };
+
+  const closeMobileMenu = () => {
+    setMobileMenuOpened(false);
   };
 
   useEffect(() => {
@@ -71,15 +75,16 @@ const Header = () => {
                       data-bs-toggle="offcanvas"
                       aria-controls="mobile-sidebar_menu"
                       data-bs-target="#mobile-sidebar_menu"
+                      onClick={() => setMobileMenuOpened(!isMobileMenuOpened)}
                     />
                     <div
-                      className="offcanvas offcanvas-start mobile_menu-contnet"
+                      className={`${isMobileMenuOpened ? "show" : ""} offcanvas offcanvas-start mobile_menu-contnet`}
                       tabIndex={-1}
                       id="mobile-sidebar_menu"
                       aria-labelledby="offcanvasMenuLabel"
                       data-bs-scroll="true"
                     >
-                      <MobileMenu />
+                      <MobileMenu closeMobileMenu={closeMobileMenu} />
                     </div>
                   </div>
                 </div>

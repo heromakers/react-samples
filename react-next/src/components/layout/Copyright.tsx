@@ -1,3 +1,5 @@
+"use client";
+
 const Copyright = () => {
   return (
     <div className="row justify-between items-center y-gap-10">
