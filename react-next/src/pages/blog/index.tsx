@@ -1,7 +1,7 @@
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
-const IndexPage = () => {
+const BlogPage = () => {
   return (
     <>
       <div className="header-margin"></div>
@@ -11,11 +11,11 @@ const IndexPage = () => {
           <div className="row justify-center text-center">
             <div className="col-auto">
               <div className="sectionTitle -md">
-                <h2 className="sectionTitle__title">Main page</h2>
+                <h2 className="sectionTitle__title">Blog articles</h2>
               </div>
             </div>
           </div>
-          <div>Index Page</div>
+          <div>Blog Page</div>
         </div>
       </section>
 
@@ -24,4 +24,4 @@ const IndexPage = () => {
   );
 };
 
-export default IndexPage;
+export default BlogPage;
